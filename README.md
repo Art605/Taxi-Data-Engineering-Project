@@ -52,7 +52,7 @@ The project involves a sequence of steps from data collection to processing and 
 
 ### **1. Data Collection**
 
-The dataset used in this project is the **Yellow Taxi Trip Data** from **New York City**. This dataset is publicly available and contains trip details such as pickup/dropoff times, trip distance, fare amounts, etc. The data was stored in **Google Cloud Storage (GCS)** in **Parquet** format for efficient reading and storage. The raw data file is located at `gs://nyc-taxi-data-arthi/input-data/yellow_tripdata_2024-01.parquet`.
+The dataset used in this project is the **Yellow Taxi Trip Data** from **New York City**. This dataset is publicly available and contains trip details such as pickup/dropoff times, trip distance, fare amounts, etc. The data was stored in **Google Cloud Storage (GCS)** in **Parquet** format for efficient reading and storage.
 
 ### **2. Data Processing**
 
@@ -76,7 +76,7 @@ The dataset used in this project is the **Yellow Taxi Trip Data** from **New Yor
 ### **3. Job Submission to Dataproc:** <br>
 Once the script was ready, it was uploaded to Google Cloud Storage (GCS) and submitted to the Dataproc cluster using the gcloud CLI:<br>
 
-*gcloud dataproc jobs submit pyspark gs://nyc-taxi-data-arthi/scripts/process_data.py --cluster=taxi-data-cluster --region=us-central1 --async*<br>
+`gcloud dataproc jobs submit pyspark gs://nyc-taxi-data-arthi/scripts/process_data.py --cluster=taxi-data-cluster --region=us-central1 --async` <br>
 
 This command triggers the PySpark job on the Dataproc cluster, where Spark processes the data in parallel across multiple worker nodes.
 
