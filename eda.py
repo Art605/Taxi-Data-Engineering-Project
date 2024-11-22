@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the cleaned dataset
-file_path = r"C:\Users\arthi\Desktop\Projects\Taxi Trip\pythonProject\cleaned_taxi_data.parquet"
+file_path = r"C:\Users\<name>\Desktop\Projects\Taxi Trip\pythonProject\cleaned_taxi_data.parquet"
 df = pd.read_parquet(file_path)
 
 # Basic Statistics
