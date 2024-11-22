@@ -1,12 +1,12 @@
 import requests
 import os
 
-# URL for the NYC Taxi dataset (update for the desired month/year)
+# URL for the NYC Taxi dataset
 url = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet"
 
 # Local directory to save the downloaded file
 local_dir = r"C:\Users\<name>\Desktop\Projects\Taxi Trip\pythonProject\data"
-os.makedirs(local_dir, exist_ok=True)  # Create directory if it doesn't exist
+os.makedirs(local_dir, exist_ok=True)  
 
 # Local file path
 local_file_path = os.path.join(local_dir, "yellow_tripdata_2024-02.parquet")
