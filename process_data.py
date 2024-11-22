@@ -26,7 +26,7 @@ df = df.withColumn("trip_duration_minutes",
 df = df.filter((col("trip_duration_minutes") > 0) & (col("trip_distance") > 0))
 
 # Save the cleaned and processed data back to GCS
-output_path = "gs://nyc-taxi-data-arthi/processed-data/cleaned_yellow_tripdata_2024-01.parquet"  # Your GCS output path
+output_path = "gs://nyc-taxi-data-arthi/processed-data/cleaned_yellow_tripdata_2024-01.parquet"  # GCS output path
 print(f"Saving processed data to: {output_path}")
 df.write.mode("overwrite").parquet(output_path)
 
