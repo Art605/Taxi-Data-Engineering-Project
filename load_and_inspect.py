@@ -5,7 +5,7 @@ import os
 url = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet"
 
 # Local directory to save the downloaded file
-local_dir = r"C:\Users\arthi\Desktop\Projects\Taxi Trip\pythonProject\data"
+local_dir = r"C:\Users\<name>\Desktop\Projects\Taxi Trip\pythonProject\data"
 os.makedirs(local_dir, exist_ok=True)  # Create directory if it doesn't exist
 
 # Local file path
