@@ -16,7 +16,7 @@ def upload_to_gcs(bucket_name, source_file_path, destination_blob_name):
     # Initialize GCS client
     storage_client = storage.Client()
 
-    # Check if the bucket exists
+
     bucket = storage_client.bucket(bucket_name)
     if not bucket.exists():
         print(f"Bucket {bucket_name} does not exist.")
@@ -29,7 +29,7 @@ def upload_to_gcs(bucket_name, source_file_path, destination_blob_name):
 
 
 # GCS bucket name and file details
-bucket_name = "nyc-taxi-data-arthi"  # Ensure this matches the bucket name in GCP
+bucket_name = "nyc-taxi-data-arthi"  
 source_file_path = r"C:\Users\arthi\Desktop\Projects\Taxi Trip\data\yellow_tripdata_2024-01.parquet"
 destination_blob_name = "processed_data/yellow_tripdata_2024-01.parquet"
 
